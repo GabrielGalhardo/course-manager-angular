@@ -9,7 +9,7 @@ import { StarComponent } from './star/star.component';
   declarations: [
     AppComponent,
     CoursesComponent,
-    StarComponent
+    StarComponent,
   ],
   imports: [
     BrowserModule,
