@@ -30,7 +30,7 @@ import { CourseInfoComponent } from './courses/course-info.component';
           path: 'courses', component: CoursesComponent
         },
         {
-          path: 'courses-info/:id', component: CourseInfoComponent
+          path: 'courses/info/:id', component: CourseInfoComponent
         },
         {
           path: '**', component: Error404Component
