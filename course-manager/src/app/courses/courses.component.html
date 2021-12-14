@@ -1,6 +1,6 @@
 <h1>courses</h1>
 <div class="form-group row">
-  <label for="col-sm-2 col-form-label">Filter By:</label>
+  <label class="col-sm-2 col-form-label">Filter By:</label>
   <div class="col-sm-10">
     <input [(ngModel)]="filter" class="form-control">
   </div>
@@ -29,6 +29,8 @@
     </td>
     <td>
       <a [routerLink]="['/courses/info', course.id ]" class="btn btn-primary">Edit</a>
+    <button class="btn btn-danger botaoDeletar" (click)="deleteById(course.id)">Delete</button>
+
     </td>
 </tr>
   </tbody>

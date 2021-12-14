@@ -1,6 +1,7 @@
 import { ReplacePipe } from './pipe/replace.pipe';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses/courses.component';
@@ -22,6 +23,7 @@ import { CourseInfoComponent } from './courses/course-info.component';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
         {
           path: '', redirectTo: 'courses', pathMatch: 'full'
